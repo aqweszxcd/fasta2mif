@@ -90,10 +90,10 @@ fprintf(fid, '\n');
 end
 DEPTH=length(data);
 fprintf(fid, (['WIDTH=' num2str(WIDTH) ';\n']));
-fprintf(fid, (['DATA_RADIX=' num2str(DEPTH) ';\n']));
+fprintf(fid, (['DEPTH=' num2str(DEPTH) ';\n']));
 fprintf(fid, '\n');
 fprintf(fid, (['ADDRESS_RADIX=' ADDRESS_RADIX ';\n']));
-fprintf(fid, (['DEPTH=' DATA_RADIX ';\n']));
+fprintf(fid, (['DATA_RADIX=' DATA_RADIX ';\n']));
 fprintf(fid, '\n');
 fprintf(fid, 'CONTENT BEGIN\n');
 data=[number;comer;fasta_value;semi];
